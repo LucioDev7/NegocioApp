@@ -29,6 +29,17 @@ namespace NegocioApp.ViewModels
                 _contrasenia = value;
                 OnPropertyChanged();
             }
-        }   
+        }
+
+        private bool _recordarContrasenia;
+        public bool RecordarContrasenia
+        {
+            get { return _recordarContrasenia; }
+            set
+            {
+                _recordarContrasenia = value;
+                OnPropertyChanged();
+            }
+        }
     }
 }
